@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'SourceSansPro-Regular';
+    src: url('SourceSansPro-Regular.otf');
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Light';
+    src: url('SourceSansPro-Light.otf');
+}
+
+@font-face {
+    font-family: 'Comissioner-Regular';
+    src: url('Commissioner-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Comissioner-Medium';
+    src: url('Commissioner-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Comissioner-Bold';
+    src: url('Commissioner-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('Lato-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('Lato-Regular.ttf');
+}
