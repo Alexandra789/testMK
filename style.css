@@ -408,9 +408,90 @@ body .cooperation .cooperation-wrapper .form .text span {
 body .cooperation .cooperation-wrapper .form .form__button {
   width: 100%;
 }
+body .tariffs {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
 body .tariffs .tariffs-wrapper .text {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+body .contacts .contacts-wrapper {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+body .contacts .contacts-wrapper .company-wrapper .company__title {
+  margin-bottom: 70px;
+  font-family: Comissioner-Regular;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+body .contacts .contacts-wrapper .office-wrapper, body .contacts .contacts-wrapper .work-time-wrapper {
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+body .contacts .contacts-wrapper .office-wrapper .office__title {
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+body .contacts .contacts-wrapper .work-time-wrapper .work-time__title {
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+body .contacts .contacts-wrapper .first {
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+body .contacts .contacts-wrapper .wrap .last {
+  margin-top: 20px;
+}
+body .contacts .contacts-wrapper .wrap .name {
+  margin-right: 10px;
+  margin-bottom: 5px;
+  font-family: Comissioner-Medium;
+  font-size: 13px;
+}
+body .contacts .contacts-wrapper .wrap .contacts__text {
+  font-size: 13px;
+  margin-bottom: 3px;
+  font-family: "Lato-Light";
+}
+body .contacts .contacts-wrapper .wrap .contacts__title {
+  font-family: Comissioner-Regular;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+body .contacts .contacts-wrapper .wrap .arrow-wrapper {
+  margin-left: 40px;
+}
+body .contacts .contacts-wrapper .wrap .email {
+  margin-top: 3px;
+  font-weight: bold;
+}
+body .contacts .contacts-wrapper .wrap img {
+  margin-right: 10px;
+}
+body .contacts .contacts-wrapper .wrap .contacts__name {
+  font-family: Comissioner-Medium;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+body .footer .footer-wrapper {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .footer .footer-wrapper .footer__text {
+  font-family: "Lato-Light";
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */
