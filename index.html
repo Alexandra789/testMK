@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="src/css/owl.carousel.min.css">
     <link rel="stylesheet" href="src/css/owl.theme.default.min.css">
     <link href="style.css" rel="stylesheet">
+    <link href="hamburger.css" rel="stylesheet">
     <title>Main Screen</title>
 </head>
 
 <body>
     <header class="bg-white header">
+
+
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-xs-12">
@@ -22,6 +25,23 @@
                         <option value="russian">русский</option>
                         <option value="english">английский</option>
                     </select>
+                </div>
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="#">Главная</a></li>
+                        <li><a class="menu__item" href="#">О нас</a></li>
+                        <li><a class="menu__item" href="#">Услуги</a></li>
+                        <li><a class="menu__item" href="#">Тарифы</a></li>
+                        <li><a class="menu__item" href="#">Инфоцентр</a></li>
+                        <li><a class="menu__item" href="#">Контакты</a></li>
+                        <li><a class="menu__item" href="tel:+375447550101">+375(44)755-01-01</a></li>
+                        <li><a class="menu__item" href="tel:+375295500101">+375(29)550-01-01</a></li>
+                    </ul>
                 </div>
                 <div class="text-center col-md-3">
                     <img class="eye" src="assets/images/icons/eye.svg" alt="eye images">
@@ -75,6 +95,7 @@
                         </div>
                     </div>
                 </div>
+
                 <img height="560px" src="assets/images/slider-activities-1.png" alt="slide image">
             </div>
             <div class="item">
@@ -169,7 +190,7 @@
     <section class="description">
         <div class="container">
             <div class="content-wrapper d-flex">
-                <div class="description-wrapper col-md-5">
+                <div class="description-wrapper description-wrapper col-md-12 col-lg-5 col-xs-12">
                     <p class="title">Юридическое сопровождение бизнеса
                         от «МК-Правовые технологии»</p>
                     <p class="text">
@@ -196,7 +217,7 @@
                         хозяйственном праве.
                     </p>
                 </div>
-                <div class="image-wrapper col-md-6">
+                <div class="image-wrapper d-none d-lg-block col-md-6">
                     <img src="assets/images/background-1.png" alt="">
                 </div>
             </div>
@@ -207,96 +228,113 @@
         <div class="container">
             <div class="activity-wrapper">
                 <p class="title">Основные направления деятельности</p>
-                <div class=" row d-flex cols-wrapper ">
-                    <div class="activity col-xs-12">
-                        <div class="information-wrapper">
-                            <p class="activity__title">Взыскание долгов</p>
-                            <button class="button-detail activity__button">Подробнее</button>
-                        </div>
-                        <div class="image-wrapper">
-                            <img src="assets/images/icons/hand.svg" alt="activity image">
-                        </div>
-                    </div>
-                    <div class="activity col-xs-12">
-                        <div class="information-wrapper">
-                            <p class="activity__title">Реорганизация бизнеса</p>
-                            <button class="button-detail activity__button">Подробнее</button>
-                        </div>
-                        <div class="image-wrapper">
-                            <img src="assets/images/icons/diagram.svg" alt="activity image">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12">
+                        <div class="activity">
+                            <div class="information-wrapper">
+                                <p class="activity__title">Взыскание долгов</p>
+                                <button class="button-detail activity__button">Подробнее</button>
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="assets/images/icons/hand.svg" alt="activity image">
+                            </div>
                         </div>
                     </div>
-                    <div class="activity col-xs-12">
-                        <div class="information-wrapper">
-                            <p class="activity__title">Продажа бизнеса</p>
-                            <button class="button-detail activity__button">Подробнее</button>
-                        </div>
-                        <div class="image-wrapper">
-                            <img src="assets/images/icons/price.svg" alt="activity image"></div>
-                    </div>
-                    <div class="activity col-xs-12">
-                        <div class="information-wrapper">
-                            <p class="activity__title">Юридические консультации</p>
-                            <button class="button-detail activity__button">Подробнее</button>
-                        </div>
-                        <div class="image-wrapper">
-                            <img src="assets/images/icons/support.svg" alt="activity image">
-                        </div>
-
-                    </div>
-                    <div class="activity col-xs-12">
-                        <div class="information-wrapper">
-                            <p class="activity__title">Ликвидация организаций</p>
-                            <button class="button-detail activity__button">Подробнее</button>
-                        </div>
-                        <div class="image-wrapper">
-                            <img src="assets/images/icons/box.svg" alt="activity image">
-                        </div>
-
-                    </div>
-                    <div class="activity col-xs-12">
-                        <div class="information-wrapper">
-                            <p class="activity__title">Разработка договоров</p>
-                            <button class="button-detail activity__button">Подробнее</button>
-                        </div>
-                        <div class="image-wrapper">
-                            <img src="assets/images/icons/folder.svg" alt="activity image"></div>
-                    </div>
-                    <div class="activity col-xs-12">
-                        <div class="information-wrapper">
-                            <p class="activity__title">Регистрация бизнеса</p>
-                            <button class="button-detail activity__button">Подробнее</button>
-                        </div>
-                        <div class="image-wrapper">
-                            <img src="assets/images/icons/stamp.svg" alt="activity image">
+                    <div class="col-md-4 col-xs-12">
+                        <div class="activity">
+                            <div class="information-wrapper">
+                                <p class="activity__title">Реорганизация бизнеса</p>
+                                <button class="button-detail activity__button">Подробнее</button>
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="assets/images/icons/diagram.svg" alt="activity image">
+                            </div>
                         </div>
                     </div>
-                    <div class="activity col-xs-12">
-                        <div class="information-wrapper">
-                            <p class="activity__title">Юридический аутсорсинг</p>
-                            <button class="button-detail activity__button">Подробнее</button>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="activity">
+                            <div class="information-wrapper">
+                                <p class="activity__title">Продажа бизнеса</p>
+                                <button class="button-detail activity__button">Подробнее</button>
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="assets/images/icons/price.svg" alt="activity image"></div>
                         </div>
-                        <div class="image-wrapper">
-                            <img src="assets/images/icons/cup.svg" alt="activity image">
-                        </div>
-
                     </div>
-                    <div class="activity col-xs-12">
-                        <div class="information-wrapper">
-                            <p class="activity__title">Аттестация в строительстве</p>
-                            <button class="button-detail activity__button">Подробнее</button>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="activity">
+                            <div class="information-wrapper">
+                                <p class="activity__title">Юридические консультации</p>
+                                <button class="button-detail activity__button">Подробнее</button>
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="assets/images/icons/support.svg" alt="activity image">
+                            </div>
                         </div>
-                        <div class="image-wrapper">
-                            <img src="assets/images/icons/house.svg" alt="activity image"></div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="activity">
+                            <div class="information-wrapper">
+                                <p class="activity__title">Ликвидация организаций</p>
+                                <button class="button-detail activity__button">Подробнее</button>
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="assets/images/icons/box.svg" alt="activity image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="activity">
+                            <div class="information-wrapper">
+                                <p class="activity__title">Разработка договоров</p>
+                                <button class="button-detail activity__button">Подробнее</button>
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="assets/images/icons/folder.svg" alt="activity image"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="activity">
+                            <div class="information-wrapper">
+                                <p class="activity__title">Регистрация бизнеса</p>
+                                <button class="button-detail activity__button">Подробнее</button>
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="assets/images/icons/stamp.svg" alt="activity image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="activity">
+                            <div class="information-wrapper">
+                                <p class="activity__title">Юридический аутсорсинг</p>
+                                <button class="button-detail activity__button">Подробнее</button>
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="assets/images/icons/cup.svg" alt="activity image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <div class="activity">
+                            <div class="information-wrapper">
+                                <p class="activity__title">Аттестация в строительстве</p>
+                                <button class="button-detail activity__button">Подробнее</button>
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="assets/images/icons/house.svg" alt="activity image"></div>
+                        </div>
                     </div>
                 </div>
-                <button class="button section-activities-button">Все услуги</button>
+                <div class="button-wrapper">
+                    <button class="button section-activities-button">Все услуги</button>
+                </div>
             </div>
     </section>
 
     <section class="activities">
-        <div class="container d-flex">
-            <div class="activity-wrapper">
+        <div class="container row">
+            <div class="col-md-4">
                 <p class="title">Основные направления деятельности</p>
             </div>
             <div class="col-md-8">
@@ -317,7 +355,7 @@
     </section>
 
     <section class="slider-images">
-        <div class="container">
+        <div class="container large">
             <div id="carouselWithOneItem" class="carousel owl-carousel">
                 <div class="item">
                     <img src="assets/images/slider-images-1.png" alt="slide image">
@@ -335,14 +373,69 @@
                     <img src="assets/images/slider-images-5.png" alt="slide image">
                 </div>
             </div>
+        </div>
+
     </section>
 
     <section class="bg-white reviews">
         <div class="container">
             <p class="title">Отзывы наших партнеров</p>
             <div class="reviews-slider">
-                <div id="carouselWithTwoItems" class="owl-carousel">
-                    <div class="item">
+                <div id="carouselWithTwoItems" class="owl-carousel owl-theme">
+                    <div class="item row">
+
+                        <div class="wrapper-information">
+                            <img src="assets/images/header-slider.png" alt="slide image">
+                            <div class="col-md-12">
+                                <div class="wrapper-text">
+                                    <p class="position">директор</p>
+                                    <p class="name">С.В. Косачев</p>
+                                    <p class="review">
+                                        Уважаемая Светлана Александровна!
+                                        Наша компания выражает благодарность
+                                        и признательность обществу с ограниченной
+                                        ответственностью «МК-Правовые технологии».
+                                        Благодаря слаженной работе и высокой квалификации
+                                        Ваших сотрудников и специалистов компания «ВиваСтрой»
+                                        получила качественные юридические услуги по взысканию
+                                        денежных средств с должника. Профессионализм работников
+                                        ООО «МК-Правовые технологии», а также желание работать
+                                        со сложными и нестандартными задачами является залогом
+                                        высокоэффективного и успешного взаимодействия наших компаний.
+                                        Рекомендуем...</p> <button class="button-detail review__button">Читать
+                                        далее</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item row">
+
+                        <div class="wrapper-information"> <img src="assets/images/header-slider.png" alt="slide image">
+                            <div class="col-md-12">
+                                <div class="wrapper-text">
+                                    <p class="position">глава представительства</p>
+                                    <p class="name">Валерий Мяснянкин</p>
+                                    <p class="review">
+                                        Представительство корпорации «VMSN GROUP, INC.» (США)
+                                        в Республике Беларусь на протяжении нескольких лет сотрудничает
+                                        с ООО «МК-Правовые технологии» в рамках сопровождения деятельности
+                                        по юридическим вопросам, в том числе по вопросам ведения кадрового
+                                        делопроизводства – абонентское обслуживание. Хотелось бы отметить
+                                        работу специалистов ООО «МК-Правовые технологии» хорошими теплыми
+                                        словами: надёжные, обязательные, пунктуальные. Вопросы любой сложности
+                                        им по плечу. Работая с профессионалами МК-Правовые технологии, всегда
+                                        можно рассчитывать...
+                                    </p> <button class="button-detail review__button">Читать далее</button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="item row">
                         <img src="assets/images/header-slider.png" alt="slide image">
                         <div class="wrapper-information">
                             <div class="col-md-9">
@@ -363,13 +456,11 @@
                                         высокоэффективного и успешного взаимодействия наших компаний.
                                         Рекомендуем...</p>
                                 </div>
-                                <div class="wrapper-button">
-                                    <button class="button-detail review__button">Читать далее</button>
-                                </div>
+                                <button class="button-detail review__button">Читать далее</button>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="item row">
                         <img src="assets/images/header-slider.png" alt="slide image">
                         <div class="wrapper-information">
                             <div class="col-md-9">
@@ -388,19 +479,17 @@
                                         можно рассчитывать...
                                     </p>
                                 </div>
-                                <div class="wrapper-button">
-                                    <button class="button-detail review__button">Читать далее</button>
-                                </div>
+
+                                <button class="button-detail review__button">Читать далее</button>
                             </div>
 
                         </div>
 
                     </div>
-
-                </div><button class="button reviews-section__button">Все отзывы</button>
+                </div>
+                <button class="button reviews-section__button">Все отзывы</button>
             </div>
-
-            <div class="row d-flex justify-content-between">
+            <div class="row">
                 <p class="text col-md-8">
                     Оказываем юридические услуги юридическим
                     лицам и индивидуальным предпринимателям.
@@ -408,10 +497,11 @@
                     работаем на всей территории Республики Беларусь,
                     а также за ее пределами, с бизнесом любого масштаба.
                 </p>
-                <button class="button">Наши партнеры</button>
+                <div class="col-md-4 button-wrapper">
+                    <button class="button">Наши партнеры</button></div>
             </div>
 
-            <div class="logos d-flex justify-content-between">
+            <div class="logos">
                 <img src="assets/images/logo/logo-bay.png" alt="logo image">
                 <img src="assets/images/logo/logo-titan.png" alt="logo image">
                 <img src="assets/images/logo/logo-favorit.png" alt="logo image">
@@ -423,39 +513,45 @@
 
     <section class="features-1">
         <div class="container">
-            <div class="block-wrapper d-flex justify-content-between">
-                <div class="block">
-                    <p class="block__title">Просто объясним сложные вещи</p>
-                    <p class="text">
-                        В своей практике, мы дотошно соблюдаем законность,
-                        учитываем сложившуюся правовую практику и правила
-                        юридической этики. Мы считаем, что в поддержке бизнеса
-                        важно учитывать конкретные проблемы клиента и строить
-                        сотрудничество по принципу тщательного изучения всех
-                        нюансов возникшей ситуации. Всегда честны и объективны.</p>
-                </div>
-                <div class="block">
-                    <p class="block__title">Надежно защитим права и интересы</p>
-                    <p class="text">
-                        Заказав комплексные юридические услуги в ООО «МК-Правовые технологии»,
-                        можно больше не платить зарплату штатному юристу, страховые отчисления
-                        и налоги с его доходов. Можно не оплачивать отпуск, больничные
-                        и не беспокоиться о нахождении работника на рабочем месте в нужный момент.
-                    </p>
-                </div>
-                <div class="block">
-                    <div class="col-md-4">
-                        <p class="block__title">Вы платите только за результат!</p>
-                    </div>
-                    <div class="col-md-8">
+            <div class="block-wrapper row">
+                <div class="col-md-12 col-lg-6 col-xs-12">
+                    <div class="block">
+                        <p class="block__title">Просто объясним сложные вещи</p>
                         <p class="text">
                             В своей практике, мы дотошно соблюдаем законность,
                             учитываем сложившуюся правовую практику и правила
-                            юридической этики. Мы считаем, что в поддержке
-                            бизнеса важно учитывать конкретные проблемы клиента
-                            и строить сотрудничество по принципу тщательного изучения
-                            всех нюансов возникшей ситуации. Всегда честны и объективны.
+                            юридической этики. Мы считаем, что в поддержке бизнеса
+                            важно учитывать конкретные проблемы клиента и строить
+                            сотрудничество по принципу тщательного изучения всех
+                            нюансов возникшей ситуации. Всегда честны и объективны.</p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6 col-xs-12">
+                    <div class="block">
+                        <p class="block__title">Надежно защитим права и интересы</p>
+                        <p class="text">
+                            Заказав комплексные юридические услуги в ООО «МК-Правовые технологии»,
+                            можно больше не платить зарплату штатному юристу, страховые отчисления
+                            и налоги с его доходов. Можно не оплачивать отпуск, больничные
+                            и не беспокоиться о нахождении работника на рабочем месте в нужный момент.
                         </p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-12 col-xs-12">
+                    <div class="block">
+                        <div class="col-md-4">
+                            <p class="block__title">Вы платите только за результат!</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="text">
+                                В своей практике, мы дотошно соблюдаем законность,
+                                учитываем сложившуюся правовую практику и правила
+                                юридической этики. Мы считаем, что в поддержке
+                                бизнеса важно учитывать конкретные проблемы клиента
+                                и строить сотрудничество по принципу тщательного изучения
+                                всех нюансов возникшей ситуации. Всегда честны и объективны.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -562,7 +658,7 @@
                     </div>
                 </div>
             </div>
-            <div class="wrapper-text d-flex justify-content-between">
+            <div class="wrapper-text row">
                 <div class="col-md-8">
                     <p class="text">
                         Оказание юридических услуг юридическим лицам
@@ -577,15 +673,17 @@
                         ложные шаги и ускорить получение результата.
                     </p>
                 </div>
-                <button class="button">Все услуги</button>
+                <div class="col-md-4 button-wrapper">
+                    <button class="button">Все услуги</button>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="bg-white reputation">
         <div class="container">
-            <div class="reputation-wrapper d-flex justify-content-between">
-                <div class="col-md-5">
+            <div class="reputation-wrapper row">
+                <div class="col-md-6">
                     <p class="title">Почему нам доверяют</p>
                     <p class="text">
                         Прозрачность и открытость для клиентов – наш принцип,
@@ -594,7 +692,7 @@
                         что обеспечивает высокое качество юридических услуг компании.
                     </p>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-6">
                     <ul>
                         <li>
                             <div class="img-wrapper">
@@ -623,8 +721,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="reputation-wrapper d-flex justify-content-between">
-                <div class="col-md-5">
+            <div class="reputation-wrapper row">
+                <div class="col-md-6">
                     <p class="title">Что получает клиент</p>
                     <p class="text">
                         Юристы нашей компании готовы дать четкие, основанные на фактах,
@@ -633,7 +731,7 @@
                         Мы объективно оцениваем риски и тщательно анализируем каждый случай.
                     </p>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-6">
                     <ul>
                         <li>
                             <div class="img-wrapper">
@@ -717,30 +815,30 @@
 
     <section class="cooperation">
         <div class="container">
-            <div class="cooperation-wrapper d-flex justify-content-between">
+            <div class="cooperation-wrapper row">
                 <div class=" col-md-5">
-                    <div class="information-wrapper row">
+                    <div class="information-wrapper">
                         <p class="title">Организация сотрудничества</p>
                     </div>
-                    <div class="information-wrapper row">
+                    <div class="information-wrapper">
                         <div class="img-wrapper">
-                        <img src="assets/images/number-one.png" alt="nubmer one image"></div>
+                            <img src="assets/images/number-one.png" alt="nubmer one image"></div>
                         <p class="text">
                             Установив контакт с нашим сотрудником,
                             Вы оговорите нюансы предмета обсуждения
                             и согласуете личную встречу.
                         </p>
                     </div>
-                    <div class="information-wrapper row">
+                    <div class="information-wrapper">
                         <div class="img-wrapper">
-                        <img src="assets/images/number-two.png" alt="nubmer two image"></div>
+                            <img src="assets/images/number-two.png" alt="nubmer two image"></div>
                         <p class="text">
                             Юрист изучит документы, необходимые
                             для разработки стратегии решения
                             возникшей ситуации. И заключит договор.
                         </p>
                     </div>
-                    <div class="information-wraper row">
+                    <div class="information-wraper">
                         <p class="text">
                             Также в нашей компании возможна удаленная форма
                             обслуживания с оказанием полного комплекса
@@ -773,18 +871,16 @@
 
     <section class="tariffs">
         <div class="container">
-            <div class="tariffs-wrapper">
+            <div class="tariffs-wrapper row">
                 <div class="col-md-8">
-                    <p class="row title">Стоимость юридических услуг в Минске</p>
-                    <p class="row text">
+                    <p class="title">Стоимость юридических услуг в Минске</p>
+                    <p class="text">
                         Стоимость услуг формируется согласно тарифам,
                         установленным в компании и в зависимости от времени,
                         затраченного юристом на разрешение возникшей ситуации.
                         Принцип прозрачности делает наши цены обоснованными и понятными для клиента.
                     </p>
-                    <div class="row">
-                        <button class="button tariffs__button">Тарифы</button>
-                    </div>
+                    <button class="button tariffs__button">Тарифы</button>
                 </div>
             </div>
         </div>
@@ -915,7 +1011,8 @@
 
     <footer class="footer">
         <div class="footer-wrapper">
-        <p class="footer__text">Разработка и продвижение сайта - Digital агентство «Веб Фокус»</p></div>
+            <p class="footer__text">Разработка и продвижение сайта - Digital агентство «Веб Фокус»</p>
+        </div>
     </footer>
 
     <script src="src/js/jquery.min.js"></script>

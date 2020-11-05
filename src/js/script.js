@@ -14,6 +14,7 @@ $('#carouselWithTwoItems').owlCarousel({
   loop:true,
   margin:35,
   nav:true,
+  dots:true,
   responsive:{
       0:{
           items:1

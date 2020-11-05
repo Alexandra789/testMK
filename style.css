@@ -13,6 +13,10 @@
   padding: 0 15px;
 }
 
+.button-wrapper {
+  text-align: right;
+}
+
 @media (max-width: 1200px) {
   .container, .owl-nav {
     max-width: 970px;
@@ -24,6 +28,10 @@
 
   .owl-nav {
     max-width: 970px !important;
+  }
+
+  .reviews-slider .owl-nav {
+    display: none;
   }
 }
 @media (max-width: 992px) {
@@ -42,9 +50,29 @@
     display: none;
   }
 
-  .activities .activity-wrapper .cols-wrapper .activity {
-    justify-content: space-between;
-    width: 350px !important;
+  .activities .activity-wrapper {
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+  }
+  .activities .activity-wrapper .activity__title {
+    font-size: 17px !important;
+  }
+
+  .reviews-slider .owl-dots {
+    margin-bottom: 20px;
+    margin-top: -10px;
+    contain: none;
+    padding: 0;
+  }
+  .reviews-slider .owl-nav {
+    display: none;
+  }
+
+  .logos {
+    display: grid !important;
+    place-items: center !important;
+    justify-content: center !important;
   }
 }
 @media (max-width: 767px) {
@@ -58,11 +86,41 @@
     display: none;
   }
 
-  .activities .activity-wrapper .title {
+  .activities .activity-wrapper {
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+  }
+
+  .button-wrapper {
     text-align: center;
   }
-  .activities .activity-wrapper .cols-wrapper {
-    justify-content: center;
+
+  .button:not(:first-of-type) {
+    margin: 0 auto;
+  }
+
+  .reviews-slider .owl-dots {
+    margin-bottom: 20px;
+    margin-top: -50px;
+    contain: none !important;
+    padding: 0;
+  }
+  .reviews-slider .owl-nav {
+    display: none;
+  }
+
+  .logos {
+    display: grid !important;
+    place-items: center !important;
+    justify-content: center !important;
+  }
+
+  .slider-images .item {
+    width: 100% !important;
+  }
+  .slider-images .item .img {
+    width: auto !important;
   }
 }
 .title {
@@ -140,6 +198,7 @@ body .header a {
   color: #808080;
 }
 body .header .navigation ul {
+  flex-wrap: wrap;
   list-style: none;
 }
 body .header .navigation ul li a {
@@ -169,14 +228,18 @@ body .slider-activities .carousel .owl-nav {
   padding-left: 30px;
   margin: -187px auto 0 auto;
   outline: none;
+  contain: size;
 }
 body .slider-activities .carousel .owl-nav *:focus {
   border: none;
   outline: none;
 }
 body .slider-activities .carousel .owl-nav *:hover {
-  color: rgba(0, 0, 0, 0.8);
-  background: none;
+  color: rgba(0, 0, 0, 0.8) !important;
+  background: none !important;
+}
+body .slider-activities .carousel .owl-nav span {
+  margin-right: 40px;
 }
 body .slider-activities .carousel .item .wrapper-information {
   position: absolute;
@@ -194,10 +257,6 @@ body .slider-activities .carousel .item .wrapper-information .slider__subtitle {
   font-size: 15px;
   margin-bottom: 40px;
   margin-right: 130px;
-}
-body .slider-activities .carousel .item img {
-  height: 650px;
-  object-fit: cover;
 }
 body .advantages .average {
   z-index: 1;
@@ -241,12 +300,14 @@ body .description .content-wrapper {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   background-color: white;
   align-items: center;
-  height: 645px;
   justify-content: flex-end;
   margin-bottom: 100px;
 }
-body .description .content-wrapper .description-wrapper, body .description .content-wrapper .image-wrapper {
+body .description .content-wrapper .image-wrapper {
   padding: 0;
+}
+body .description .content-wrapper .description-wrapper {
+  padding: 15px;
 }
 body .description .content-wrapper img {
   float: right;
@@ -255,42 +316,95 @@ body .activities .text:last-child {
   margin-top: 30px;
   margin-bottom: 60px;
 }
-body .activities .activity-wrapper {
-  align-items: center;
-}
 body .activities .activity-wrapper .title {
   margin-bottom: 40px;
 }
-body .activities .activity-wrapper .cols-wrapper .activity {
-  margin-right: 25px;
+body .activities .activity-wrapper .activity {
   display: flex;
-  width: 370px;
+  max-width: 370px;
   height: 140px;
+  padding: 15px;
   align-items: center;
   justify-content: space-around;
   background-color: white;
   margin-bottom: 30px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
-body .activities .activity-wrapper .cols-wrapper .information-wrapper {
+body .activities .activity-wrapper .information-wrapper {
   width: 175px;
 }
-body .activities .activity-wrapper .cols-wrapper .information-wrapper .activity__title {
+body .activities .activity-wrapper .information-wrapper .activity__title {
   font-family: Comissioner-Regular;
   font-size: 20px;
 }
-body .activities .activity-wrapper .cols-wrapper .image-wrapper {
+body .activities .activity-wrapper .image-wrapper {
   border: 1px solid #00000021;
   border-radius: 50%;
   padding: 20px;
 }
-body .slider-images .item img {
-  height: 560px;
+body .slider-images .large {
+  max-width: 1370px !important;
+}
+body .slider-images .owl-next {
+  float: right;
+}
+body .slider-images .owl-nav {
+  margin-top: -280px;
+  margin-bottom: 280px;
+  font-size: 55px;
+  outline: none;
+}
+body .slider-images .owl-nav *:focus {
+  border: none;
+  outline: none;
+}
+body .slider-images .owl-nav *:hover {
+  color: rgba(0, 0, 0, 0.8);
+  background: none;
+}
+body .slider-images .item {
+  width: 1170px !important;
+  margin: 0 auto;
 }
 body .reviews .title {
   margin-bottom: 40px;
   margin-top: -150px;
   padding-top: 185px;
+}
+body .reviews .reviews-slider .owl-dots {
+  padding-top: 50px;
+  contain: size;
+}
+body .reviews .reviews-slider .owl-dots .owl-dot {
+  margin-top: 10px;
+}
+body .reviews .reviews-slider .owl-dots .owl-dot:focus {
+  outline: none;
+}
+body .reviews .reviews-slider .owl-dots .owl-dot span {
+  outline: none;
+  background: #E5E5E5 !important;
+}
+body .reviews .reviews-slider .owl-dots .owl-dot.active span {
+  background: #DEC377 !important;
+}
+body .reviews .reviews-slider .owl-nav {
+  font-size: 55px;
+  max-width: 1200px;
+  text-align: right;
+  outline: none;
+  contain: size;
+}
+body .reviews .reviews-slider .owl-nav *:focus {
+  border: none;
+  outline: none;
+}
+body .reviews .reviews-slider .owl-nav *:hover {
+  color: rgba(0, 0, 0, 0.8);
+  background: none;
+}
+body .reviews .reviews-slider .owl-nav span {
+  margin-right: 40px;
 }
 body .reviews .reviews-slider .item {
   height: 585px;
@@ -303,10 +417,13 @@ body .reviews .reviews-slider .item .wrapper-information {
   display: flex;
   flex-wrap: wrap;
   padding: -58px;
-  height: 480px;
   align-content: center;
 }
+body .reviews .reviews-slider .item .wrapper-information .wrapper-text {
+  padding: 50px;
+}
 body .reviews .reviews-slider .item .wrapper-information .wrapper-text .position {
+  margin-top: 25px;
   font-family: Lato-Regular;
   margin-bottom: 5px;
   font-size: 15px;
@@ -318,18 +435,24 @@ body .reviews .reviews-slider .item .wrapper-information .wrapper-text .name {
 }
 body .reviews .reviews-slider .item .wrapper-information .wrapper-text .review {
   letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
   font-size: 14px;
   color: #00000082;
+  display: -webkit-box;
+  -webkit-line-clamp: 12;
+  -webkit-box-orient: vertical;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
 }
 body .reviews .reviews-slider .item .wrapper-information .review__button {
   font-weight: bold;
   color: #00000075;
 }
 body .reviews .reviews-section__button {
-  margin-top: 20px;
+  margin-top: -20px;
 }
 body .reviews .logos {
+  display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 body .reviews .logos img {
@@ -418,9 +541,13 @@ body .features-2 .wrapper-text .text {
   padding-bottom: 100px;
 }
 body .reputation .reputation-wrapper {
-  height: 400px;
-  align-items: center;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+body .reputation .reputation-wrapper:last-child {
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 body .reputation .reputation-wrapper:last-child {
   border: none;
@@ -430,6 +557,8 @@ body .reputation .reputation-wrapper .title {
   margin-bottom: 40px;
 }
 body .reputation .reputation-wrapper ul {
+  margin-top: 5px;
+  padding: 0;
   list-style: none;
 }
 body .reputation .reputation-wrapper ul li {
