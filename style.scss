@@ -131,6 +131,10 @@
     }
   }
 
+  .slider__title{
+    font-size: 30px;
+  }
+
   .logos {
     display: grid !important;
     place-items: center !important;
@@ -178,10 +182,9 @@
 }
 
 .text{
-  //font-family: Lato-Light;
-  font-size: 15px;
+  font-family: Lato;
   letter-spacing: 0.5px;
-  color: #00000082;
+  color: rgba( 0 0 0 /80%);
 }
 
 .button {
@@ -214,6 +217,9 @@
   background-color: white;
   border: none;
   text-transform: uppercase;
+  font-family: 'Lato';
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
 
   &:hover{
     text-shadow: 1px 6px 5px #a7a7a7;
@@ -304,7 +310,9 @@ body {
           background-repeat: no-repeat;
           height: 650px;
           width: 100%;
-          background-position-x: center;
+        }
+        .pic-1,.pic-2,.pic-3, .pic-4, .pic-5{
+          background-position-x: center !important;
         }
         .pic-1{
           background: url(assets/images/slider-activities-1.png);
@@ -364,6 +372,7 @@ body {
             font-size: 15px;
             margin-bottom: 40px;
             margin-right: 130px;
+            color: rgba(0 0 0 / 75%);
           }
         }
       }
@@ -403,6 +412,9 @@ body {
       .title-icon {
         font-size: 16px;
         text-align: center;
+        font-weight: 400;
+        font-family: 'Lato';
+        color: rgba( 0 0 0 / 75%);
       }
     }
 
@@ -592,7 +604,7 @@ body {
 
             .position {
               margin-top: 25px;
-              //font-family: Lato-Regular;
+              font-family: Lato-Regular;
               margin-bottom: 5px;
               font-size: 15px;
             }
@@ -606,18 +618,20 @@ body {
             .review {
               letter-spacing: 0.5px;
               font-size: 14px;
-              color: #00000082;
+              color: rgba(0, 0, 0, 0.8);
               display: -webkit-box;
               -webkit-line-clamp: 12;
               -webkit-box-orient: vertical;
               overflow-y: hidden;
               text-overflow: ellipsis;
+              font-family: 'Lato';
             }
           }
 
           .review__button {
-            font-weight: bold;
-            color: #00000075;;
+            font-weight: 600;
+            color: rgba(0 0 0 / 50%);
+            font-family: 'Lato';
           }
         }
       }
@@ -799,6 +813,8 @@ body {
         .name, .phone {
           font-family: Comissioner-Medium;
           font-size: 13px;
+          font-weight: 500;
+          color: rgba( 0 0 0 /50%);
         }
 
         .phone {
@@ -813,6 +829,10 @@ body {
         }
 
         .text {
+          font-family: 'Lato';
+          font-size: 13px;
+          letter-spacing: 0.5px;
+          color: rgba( 0 0 0 /80%);
           margin-bottom: 20px;
 
           span {
@@ -836,6 +856,7 @@ body {
       .text {
         margin-top: 30px;
         margin-bottom: 30px;
+        font-size: 20px;
       }
     }
   }
@@ -864,7 +885,9 @@ body {
           font-size: 15px;
           text-transform: uppercase;
           padding-bottom: 5px;
-          border-bottom: 1px solid rgb(0 0 0 / 10%);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          font-family: 'Lato';
+          color: rgba( 0 0 0 /50%);
         }
       }
 
@@ -898,7 +921,7 @@ body {
         .contacts__text {
           font-size: 13px;
           margin-bottom: 3px;
-          //font-family: 'Lato-Light';
+          font-family: 'Lato-Light';
         }
 
         .contacts__title {
@@ -939,9 +962,9 @@ body {
 
       .footer__text {
         margin: 0;
-        text-align: center;
-        //font-family: "Lato-Light";
+        font-family: "Lato-Light";
         font-size: 12px;
+        color: rgba( 0 0 0 /80%);
       }
     }
   }

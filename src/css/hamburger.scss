@@ -5,6 +5,7 @@
     opacity: 0;
 
     &:checked {
+      position:fixed;
       & ~ .menu__btn{
         position: fixed;
         top: 19px;

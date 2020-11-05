@@ -107,6 +107,10 @@
     display: none;
   }
 
+  .slider__title {
+    font-size: 30px;
+  }
+
   .logos {
     display: grid !important;
     place-items: center !important;
@@ -154,9 +158,9 @@
 }
 
 .text {
-  font-size: 15px;
+  font-family: Lato;
   letter-spacing: 0.5px;
-  color: #00000082;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .button {
@@ -187,6 +191,9 @@
   background-color: white;
   border: none;
   text-transform: uppercase;
+  font-family: "Lato";
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
 }
 .button-detail:hover {
   text-shadow: 1px 6px 5px #a7a7a7;
@@ -256,7 +263,9 @@ body .slider-activities .carousel .img-wrapper .bg-img {
   background-repeat: no-repeat;
   height: 650px;
   width: 100%;
-  background-position-x: center;
+}
+body .slider-activities .carousel .img-wrapper .pic-1, body .slider-activities .carousel .img-wrapper .pic-2, body .slider-activities .carousel .img-wrapper .pic-3, body .slider-activities .carousel .img-wrapper .pic-4, body .slider-activities .carousel .img-wrapper .pic-5 {
+  background-position-x: center !important;
 }
 body .slider-activities .carousel .img-wrapper .pic-1 {
   background: url(assets/images/slider-activities-1.png);
@@ -309,6 +318,7 @@ body .slider-activities .carousel .item .wrapper-information .slider__subtitle {
   font-size: 15px;
   margin-bottom: 40px;
   margin-right: 130px;
+  color: rgba(0, 0, 0, 0.75);
 }
 body .advantages .average {
   z-index: 1;
@@ -337,6 +347,9 @@ body .advantages .icon {
 body .advantages .title-wrapper .title-icon {
   font-size: 16px;
   text-align: center;
+  font-weight: 400;
+  font-family: "Lato";
+  color: rgba(0, 0, 0, 0.75);
 }
 body .advantages .text-block {
   background-color: #FFFFFF;
@@ -478,6 +491,7 @@ body .reviews .reviews-slider .item .wrapper-information .wrapper-text {
 }
 body .reviews .reviews-slider .item .wrapper-information .wrapper-text .position {
   margin-top: 25px;
+  font-family: Lato-Regular;
   margin-bottom: 5px;
   font-size: 15px;
 }
@@ -489,16 +503,18 @@ body .reviews .reviews-slider .item .wrapper-information .wrapper-text .name {
 body .reviews .reviews-slider .item .wrapper-information .wrapper-text .review {
   letter-spacing: 0.5px;
   font-size: 14px;
-  color: #00000082;
+  color: rgba(0, 0, 0, 0.8);
   display: -webkit-box;
   -webkit-line-clamp: 12;
   -webkit-box-orient: vertical;
   overflow-y: hidden;
   text-overflow: ellipsis;
+  font-family: "Lato";
 }
 body .reviews .reviews-slider .item .wrapper-information .review__button {
-  font-weight: bold;
-  color: #00000075;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Lato";
 }
 body .reviews .reviews-section__button {
   margin-top: -20px;
@@ -634,6 +650,8 @@ body .cooperation .cooperation-wrapper .form .phone-wrapper, body .cooperation .
 body .cooperation .cooperation-wrapper .form .name, body .cooperation .cooperation-wrapper .form .phone {
   font-family: Comissioner-Medium;
   font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
 }
 body .cooperation .cooperation-wrapper .form .phone {
   margin-top: 10px;
@@ -645,6 +663,10 @@ body .cooperation .cooperation-wrapper .form input {
   outline: none;
 }
 body .cooperation .cooperation-wrapper .form .text {
+  font-family: "Lato";
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.8);
   margin-bottom: 20px;
 }
 body .cooperation .cooperation-wrapper .form .text span {
@@ -661,6 +683,7 @@ body .tariffs {
 body .tariffs .tariffs-wrapper .text {
   margin-top: 30px;
   margin-bottom: 30px;
+  font-size: 20px;
 }
 body .contacts .contacts-wrapper {
   margin-top: 50px;
@@ -681,6 +704,8 @@ body .contacts .contacts-wrapper .office-wrapper .office__title {
   text-transform: uppercase;
   padding-bottom: 5px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: "Lato";
+  color: rgba(0, 0, 0, 0.5);
 }
 body .contacts .contacts-wrapper .work-time-wrapper .work-time__title {
   font-size: 15px;
@@ -704,6 +729,7 @@ body .contacts .contacts-wrapper .wrap .name {
 body .contacts .contacts-wrapper .wrap .contacts__text {
   font-size: 13px;
   margin-bottom: 3px;
+  font-family: "Lato-Light";
 }
 body .contacts .contacts-wrapper .wrap .contacts__title {
   font-family: Comissioner-Regular;
@@ -734,8 +760,9 @@ body .footer .footer-wrapper {
 }
 body .footer .footer-wrapper .footer__text {
   margin: 0;
-  text-align: center;
+  font-family: "Lato-Light";
   font-size: 12px;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 /*# sourceMappingURL=style.css.map */
