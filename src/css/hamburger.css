@@ -6,7 +6,7 @@
 }
 .hamburger-menu #menu__toggle:checked ~ .menu__btn {
   position: fixed;
-  top: 50px;
+  top: 19px;
 }
 .hamburger-menu #menu__toggle:checked ~ .menu__btn > span {
   transform: rotate(45deg);
@@ -71,6 +71,7 @@
   padding: 0px 25px;
   color: #333;
   font-size: 18px;
+  font-family: "Comissioner-Medium";
   font-weight: 600;
   text-decoration: none;
   transition-duration: 0.25s;
@@ -85,6 +86,10 @@
   }
 }
 @media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+
   #menu-left {
     max-width: 240px;
   }
