@@ -107,6 +107,13 @@
     display: none;
   }
 
+  .contacts-wrapper .last {
+    margin: 0 !important;
+  }
+  .contacts-wrapper .contacts__title, .contacts-wrapper .contacts__name {
+    margin-top: 30px !important;
+  }
+
   .slider-activities .text-wrapper {
     height: 325px;
   }
@@ -767,6 +774,7 @@ body .footer .footer-wrapper {
   padding: 20px 0;
 }
 body .footer .footer-wrapper .footer__text {
+  text-align: center;
   margin: 0;
   font-family: "Lato-Light";
   font-size: 12px;
