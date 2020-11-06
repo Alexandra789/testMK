@@ -723,6 +723,8 @@ body .contacts .contacts-wrapper .office-wrapper .office__title {
   color: rgba(0, 0, 0, 0.5);
 }
 body .contacts .contacts-wrapper .work-time-wrapper .work-time__title {
+  font-family: "Lato";
+  color: rgba(0, 0, 0, 0.5);
   font-size: 15px;
   text-transform: uppercase;
   padding-bottom: 5px;
