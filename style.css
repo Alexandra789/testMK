@@ -107,8 +107,16 @@
     display: none;
   }
 
+  .slider-activities .text-wrapper {
+    height: 325px;
+  }
+
   .slider__title {
     font-size: 30px;
+  }
+
+  .advantages .text-block {
+    margin-top: 30px;
   }
 
   .logos {
