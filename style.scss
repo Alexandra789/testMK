@@ -203,6 +203,8 @@
 
 .text{
   font-family: Lato;
+  font-size: 15px;
+  font-weight: 300;
   letter-spacing: 0.5px;
   color: rgba( 0 0 0 /80%);
 }
@@ -268,6 +270,8 @@ body {
 
     select {
       font-family: SourceSansPro;
+      font-family: Lato;
+      color: rgba( 0 0 0 / 80%);
       font-size: 16px;
       border: none;
       background: none;
@@ -390,9 +394,10 @@ body {
 
           .slider__subtitle {
             font-size: 15px;
+            font-family: Lato;
+            font-weight: 300;
             margin-bottom: 40px;
             margin-right: 130px;
-            color: rgba(0 0 0 / 75%);
           }
         }
       }
@@ -531,8 +536,8 @@ body {
     }
 
     .owl-nav {
-      margin-top: -280px;
-      margin-bottom: 280px;
+      margin-top: -330px;
+      margin-bottom: 220px;
       font-size: 55px;
       outline: none;
 
@@ -624,7 +629,8 @@ body {
 
             .position {
               margin-top: 25px;
-              font-family: Lato-Regular;
+              font-family: Lato;
+              font-weight: 400;
               margin-bottom: 5px;
               font-size: 15px;
             }
@@ -645,6 +651,7 @@ body {
               overflow-y: hidden;
               text-overflow: ellipsis;
               font-family: 'Lato';
+              font-weight: 300;
             }
           }
 
@@ -786,15 +793,21 @@ body {
       .title {
         margin-bottom: 40px;
       }
-
       ul {
         margin-top: 5px;
         padding: 0;
         list-style: none;
 
         li {
+
           display: flex;
           margin-bottom: 20px;
+          .reputation__text{
+            font-weight: 600;
+            font-family: Lato;
+            color: rgba( 0 0 0 / 75%);
+            font-size: 17px;
+          }
 
           img {
             margin-right: 20px;
@@ -811,7 +824,9 @@ body {
       .title {
         margin-bottom: 40px;
       }
-
+      .number{
+        font-weight: 400;
+      }
       .information-wrapper {
         display: flex;
         flex-wrap: inherit;
@@ -842,6 +857,9 @@ body {
         }
 
         input {
+          font-family: Lato;
+          font-size: 15px;
+          font-weight: 300;
           border: none;
           margin-bottom: 5px;
           font-size: 15px;
@@ -849,15 +867,19 @@ body {
         }
 
         .text {
-          font-family: 'Lato';
+          font-family: Lato;
           font-size: 13px;
+          margin-top: 20px;
           letter-spacing: 0.5px;
           color: rgba( 0 0 0 /80%);
           margin-bottom: 20px;
 
           span {
-            font-weight: bold;
-            border-bottom: 2px solid black;
+            font-family: Lato;
+            font-size: 13px;
+            font-weight: 700;
+            color: rgba( 0 0 0 / 50%);
+            border-bottom: 1px solid rgba( 0 0 0 / 50%);
           }
         }
 
@@ -876,7 +898,6 @@ body {
       .text {
         margin-top: 30px;
         margin-bottom: 30px;
-        font-size: 20px;
       }
     }
   }
@@ -891,6 +912,7 @@ body {
           margin-bottom: 70px;
           font-family: Comissioner-Regular;
           font-size: 20px;
+          color: rgba(0 0 0 /75%);
           text-transform: uppercase;
         }
       }
@@ -906,15 +928,17 @@ body {
           text-transform: uppercase;
           padding-bottom: 5px;
           border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-          font-family: 'Lato';
-          color: rgba( 0 0 0 /50%);
+          font-family: Lato;
+          font-weight: 400;
+          color: rgba(0 0 0 /50%);
         }
       }
 
       .work-time-wrapper {
         .work-time__title {
-          font-family: 'Lato';
-          color: rgba( 0 0 0 /50%);
+          font-family: Lato;
+          font-weight: 400;
+          color: rgba(0 0 0 /50%);
           font-size: 15px;
           text-transform: uppercase;
           padding-bottom: 5px;
@@ -938,20 +962,23 @@ body {
           margin-bottom: 5px;
           font-family: Comissioner-Medium;
           font-size: 13px;
+          color: rgba( 0 0 0 / 75%);
         }
 
         .contacts__text {
           font-size: 13px;
           margin-bottom: 3px;
-          font-family: 'Lato-Light';
+          font-family: Lato;
+          font-weight: 300;
         }
 
         .contacts__title {
           font-family: Comissioner-Regular;
-          font-weight: bold;
+          font-weight: 400;
           font-size: 14px;
           text-transform: uppercase;
           margin-bottom: 10px;
+          color: rgba( 0 0 0 / 75%);
         }
 
         .arrow-wrapper {
@@ -960,17 +987,20 @@ body {
 
         .email {
           margin-top: 3px;
-          font-weight: bold;
+          font-weight: 400;
         }
 
         img {
           margin-right: 10px;
         }
 
+        .clr {
+          color: rgba(0 0 0 / 50%)
+        }
+
         .contacts__name {
           font-family: Comissioner-Medium;
           font-size: 13px;
-          font-weight: bold;
           margin-bottom: 5px;
         }
       }
@@ -985,7 +1015,8 @@ body {
       .footer__text {
         text-align: center;
         margin: 0;
-        font-family: "Lato-Light";
+        font-family: Lato;
+        font-weight: 300;
         font-size: 12px;
         color: rgba( 0 0 0 /80%);
       }
